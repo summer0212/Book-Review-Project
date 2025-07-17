@@ -1,0 +1,27 @@
+# --- Virtual Environment ---
+# Never commit the virtual environment folder
+venv/
+
+# --- Python Cache ---
+# Ignore Python's compiled files and cache folders
+__pycache__/
+*.pyc
+
+# --- Secrets and Environment Files ---
+# CRITICAL: This line ignores your .env file containing secrets
+.env
+
+# --- IDE / Editor specific files ---
+.vscode/
+.idea/
+
+# --- Local Database ---
+# Do not commit the actual database file, only the code to create it
+dev.db
+
+# --- Flask / SQLAlchemy specific ---
+# The instance folder can hold temporary or instance-specific data
+instance/
+
+# --- Test artifacts ---
+.pytest_cache/
